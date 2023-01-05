@@ -14,8 +14,6 @@ body {
 
 .header {
     display: flex;
-    /*align-items: center;
-    padding-left: 300px;*/
     justify-content: space-around;
 
 }
@@ -192,21 +190,20 @@ li {
 @media only screen and (max-width: 600px) {
 
 
-    body {
-      
-
-    }
-
     .header {
         padding: 5px;
         font-size: 14px;
     }
 
     .section-one {
-        height: 350px;
+        height: 480px;
     }
 
     .section-one-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -100px;
  
     }
 
@@ -218,12 +215,96 @@ li {
     .section-one-text > p {
         font-size: 12px;
         padding-left: 5px;
+        width: 300px;
+    }
+
+    .section-one-text {
+        width: 320px;
     }
 
     .section-one-image-placeholder {
-
-        display: none;
+        width: 260px;
+        height: 150px;
+        position: relative;
+        top: -80px;
     }
+
+    .image-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 320px;
+        height: 300px;
+        gap: 10px;
+        position: relative;
+        top: -50px;
+    }
+
+    .image {
+        height: 60px;
+        width: 60px;
+        border-radius: 5px;
+    }
+
+    .section-two {
+        height: 320px;
+        font-size: 8px;
+    }
+
+    .section-two > h2 {
+        font-size: 22px;
+        position: relative;
+        top: -30px;
+    }
+
+
+    .image-one, .image-two, .image-three, .image-four > p {
+        width: 55px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-three {
+        height: 320px;
+    }
+
+    .quote {
+        font-size: 18px;
+        width: 280px;
+    }
+
+    .section-three > h3 {
+        font-size: 12px;
+    }
+
+    .section-four {
+        height: 280px;
+        background-color: #3882f6;
+
+    }
+    
+    .section-four-content {
+        display: flex;
+        flex-direction: column;
+        color: #F9FAF8;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+        width: 320px;
+    }
+    
+    .section-four-button {
+        width: 150px;
+        height: 150px;
+
+    }
+    
+    .section-four-text {
+        height: 150px;
+    }
+
+
 
 
 
